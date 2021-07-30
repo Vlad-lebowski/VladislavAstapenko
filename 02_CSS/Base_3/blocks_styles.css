@@ -1,0 +1,24 @@
+.whole_block {
+    
+    background-color:whitesmoke;
+}
+
+.navigation_block{
+    width: 15em;
+    background-color: lightgray;
+    float: left;
+}
+
+.article {
+    background-color: darkgray;
+    margin-bottom: 0.2em;
+    overflow: auto;
+}
+
+.footer {
+    background-color:lightgray;
+}
+
+img {
+    float: right;
+}
