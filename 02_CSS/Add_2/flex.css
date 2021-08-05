@@ -1,0 +1,41 @@
+.whole_block {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:whitesmoke;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+}
+
+.navigation_block{
+    width: 15em;
+    background-color: lightgray;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 15em);
+}
+
+.article {
+    background-color: darkgray;
+    margin-bottom: 0.2em;
+}
+
+.article ~ .article {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    min-width: 15em;
+    background-color:lightgray;
+}
+
+.image {
+    align-self: flex-end;
+}
