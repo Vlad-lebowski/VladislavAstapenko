@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div.Menu_Level1 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+div.Menu_Level1 > div {
+    float: left;
+}
+
+div.Menu_Level1 > div > div.day {
+    background-color: lightgray;
+    color: gray;
+    border: solid 1px black;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+}
+
+div.Menu_Level2 {
+    width: 150px;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+div.Menu_Level2 > div {
+    background-color: blue;
+    color:grey;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.Menu_Level1 > div:hover div.Menu_Level2 {
+    height: 100px;
+}
+
+@media screen and (max-width: calc(150px *6 + 9px)){
+    div.Menu_Level1 {
+    display: flex;
+    flex-direction: column;
+    }
+
+    div.Menu_Level1 > div {
+        width: 150px;
+    }
+
+    div.Menu_Level2 {
+        height: 0px;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        margin-left: 150px;
+        transition: height 4s cubic-bezier(0, 0, 1.0 0.0);
+    }
+
+    div.Menu_Level1 > div:hover {
+        width: 300px;
+    }
+
+    div.Menu_Level1 > div:hover div.day {
+        float: left;
+    }
+
+    div.Menu_Level1 > div:hover div.Menu_Level2 {
+        visibility: visible;
+        opacity: 1;
+        height: 100px;
+        position: absolute;
+        margin-left: 150px;
+    }
+}
