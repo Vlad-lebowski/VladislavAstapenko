@@ -1,0 +1,44 @@
+table {
+    border-collapse: collapse;
+    border-style: dotted;
+    border-width: 1px;
+    width: 600px;
+}
+
+td {
+    border-style: dotted;
+    border-width: 1px;
+}
+
+tr:first-child {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:not(:first-child) > td:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+tr:not(:first-child):nth-child(2n+1) {
+    background-color: lightgrey;
+}
+
+caption {
+    caption-side: bottom;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+tr:not(:first-child):hover {
+    background-color: lime;
+    cursor: pointer;
+    
+}
+
+tr:not(:first-child):nth-child(2n+1):hover {
+    background-color: lime;
+    cursor: pointer;
+}
