@@ -1,0 +1,12 @@
+div > p {
+    text-indent: 10px;
+    border: solid 1px;
+    border-color: silver;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 6px;
+}
+
+li {
+    list-style: url(link_images/logo-list.jpg);
+}
