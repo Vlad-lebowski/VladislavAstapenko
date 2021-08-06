@@ -1,0 +1,46 @@
+div > p {
+    text-indent: 10px;
+    border: solid 1px;
+    border-color: silver;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 6px;
+}
+
+li::before {
+    content: url(link_images/logo-list.jpg);
+}
+
+li {
+    list-style: none;
+    position: relative;
+    left: -23px;
+}
+
+.word:hover::after {
+    content: url(link_images/logo-doc.jpg);
+}
+
+.pdf:hover::after {
+    content: url(link_images/logo-pdf.png);
+}
+
+.zip:hover::after {
+    content: url(link_images/logo-zip.gif);
+}
+
+a[href^="http"]::before{
+    content: url(link_images/extref.png);
+}
+
+p a[href$=zip]::after{
+    content: url(link_images/logo-zip.gif);
+}
+
+p a[href$=docx]::after{
+    content: url(link_images/logo-doc.jpg);
+}
+
+p a[href$=pdf]::after{
+    content: url(link_images/logo-pdf.png);
+}

@@ -7,6 +7,38 @@ div > p {
     padding: 6px;
 }
 
+a[href^="http"]::before{
+    content: url(link_images/extref.png);
+}
+
+p a[href$=zip]::after{
+    content: url(link_images/logo-zip.gif);
+}
+
+p a[href$=docx]::after{
+    content: url(link_images/logo-doc.jpg);
+}
+
+p a[href$=pdf]::after{
+    content: url(link_images/logo-pdf.png);
+}
+
 li {
     list-style: url(link_images/logo-list.jpg);
+}
+
+li img {
+    display: none;
+}
+
+.word:hover img{
+    display: inline;
+}
+
+.pdf:hover img{
+    display: inline;
+}
+
+.zip:hover img{
+    display: inline;
 }
