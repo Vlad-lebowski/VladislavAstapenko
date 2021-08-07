@@ -59,7 +59,7 @@ div.Menu_Level1 > div:hover div.Menu_Level2 {
         visibility: hidden;
         opacity: 0;
         margin-left: 150px;
-        transition: height 4s cubic-bezier(0, 0, 1.0 0.0);
+        transition: height 1s;
     }
 
     div.Menu_Level1 > div:hover {
